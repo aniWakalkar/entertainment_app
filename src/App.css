@@ -7,6 +7,26 @@
   pointer-events: none;
 }
 
+
+@media (min-width: 640px) {
+  .responsive-height {
+      height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .responsive-height {
+      height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .responsive-height {
+      height: 400px;
+  }
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -35,4 +55,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the track */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the thumb */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
+
+
+*{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
